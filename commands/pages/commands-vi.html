@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="../../img/logo_peanut_tron.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/commands.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="shortcut icon" href="../img/" type="image/x-icon">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+    <title>Hệ Thống Lệnh - Peanutss Bot</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <div class="navbar navbar-expand-md bg-dark navbar-dark">
+        <div class="navbar-brand mt-2 mb-2">
+
+            <a class="navbar-brand" href="../../index-vi.html">
+                ⠀<img src="../../img/logo_peanut.png"width="28"height="28"/>
+                <strong>Peanutss Bot</strong>
+            </a>
+            <div class="collapse navbar-collapse" id="mainmenu">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <section style="margin-top: 3%;">
+            <div class="row">
+                <div class="col-sm-6 my-1">
+                    <h2 class="fw-bold">Hệ Thống Lệnh</h2>
+                    <p class="command-descreption">Tìm kiếm toàn bộ lệnh của Peanutss Bot một cách đơn giản và nhanh chóng</p>
+                </div>
+                <div class="col-sm-6 my-1">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4050940490843957" crossorigin="anonymous"></script>
+                    <!-- banner -->
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:100%;height:90px"
+                         data-ad-client="ca-pub-4050940490843957"
+                         data-ad-slot="6770580457"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </div>
+            <hr>
+        </section>
+        <div class="mt-4"></div>
+        <div class="row">
+            <div class="col-md-4 my-2">
+                <div class="card p-3">
+                    <h5>Danh Sách Lệnh</h5>
+                    <hr />
+                    <button onclick="active(this)" id="CategoryBtnAll" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fa-solid fa-magnifying-glass fa-shake"></i>&nbsp; Tất Cả Lệnh</button>
+                    
+                        <button onclick="active(this)" id="CategoryBtn0" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fa-solid fa-gear fa-spin"></i>&nbsp; Lệnh Quản Lí</button>
+                    
+                        <button onclick="active(this)" id="CategoryBtn1" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fa-solid fa-star fa-beat"></i>&nbsp; Lệnh Chung</button>
+                    
+                        <button onclick="active(this)" id="CategoryBtn2" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fa-solid fa-photo-film fa-beat"></i>&nbsp;&nbsp; Lệnh Đa Phương Tiện</button>
+                    
+                        <button onclick="active(this)" id="CategoryBtn3" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fa-solid fa-arrow-up-from-bracket fa-bounce"></i>&nbsp;&nbsp; Lệnh Ứng Dụng</button>
+                    
+                </div>
+            </div>
+            <div class="col-md-8 my-2">
+                        <div class="mt-4"></div>
+                    
+                    <div class="commands-section" id="Category0">
+                        
+                            
+                            <div class="accordion accordion-flush mt-2" id="ban">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fban">
+                                             /ban (sắp ra mắt)&nbsp; <span class="command-descreption">- cấm thành viên</span>
+                                        </button>
+                                    </h2>
+                                    <div id="fban" class="accordion-collapse collapse" data-bs-parent="#ban">
+                                        <div class="accordion-body">
+                                            <span>Ví Dụ:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    /ban @member<br>
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="accordion accordion-flush mt-2" id="kick">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fkick">
+                                             /kick (sắp ra mắt)&nbsp; <span class="command-descreption">- đuổi thành viên</span>
+                                        </button>
+                                    </h2>
+                                    <div id="fkick" class="accordion-collapse collapse" data-bs-parent="#kick">
+                                        <div class="accordion-body">
+                                            <span>Ví Dụ:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    /kick @member
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="accordion accordion-flush mt-2" id="mute">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fmute">
+                                             /mute (sắp ra mắt)&nbsp; <span class="command-descreption">- cấm chat thành viên</span>
+                                        </button>
+                                    </h2>
+                                    <div id="fmute" class="accordion-collapse collapse" data-bs-parent="#mute">
+                                        <div class="accordion-body">
+                                            <span>Ví Dụ:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    /mute @member
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="accordion accordion-flush mt-2" id="timeout">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#ftimeout">
+                                             /timeout (sắp ra mắt)&nbsp; <span class="command-descreption">- giới hạn thời gian thành viên</span>
+                                        </button>
+                                    </h2>
+                                    <div id="ftimeout" class="accordion-collapse collapse" data-bs-parent="#timeout">
+                                        <div class="accordion-body">
+                                            <span>Ví Dụ:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    /timeout @member
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                
+                    
+                    <div class="commands-section" id="Category1">
+                        
+                            
+                            <div class="accordion accordion-flush mt-2" id="help">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fhelp">
+                                             /help&nbsp; <span class="command-descreption">- Mở bảng lệnh của bot</span>
+                                        </button>
+                                    </h2>
+                                    <div id="fhelp" class="accordion-collapse collapse" data-bs-parent="#help">
+                                        <div class="accordion-body">
+                                            <span>Ví Dụ:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    /help
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="accordion accordion-flush mt-2" id="ping">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fping">
+                                             /ping&nbsp; <span class="command-descreption">- Kiểm tra độ trễ của bot</span>
+                                        </button>
+                                    </h2>
+                                    <div id="fping" class="accordion-collapse collapse" data-bs-parent="#ping">
+                                        <div class="accordion-body">
+                                            <span>Ví Dụ:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    /ping
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="accordion accordion-flush mt-2" id="invite">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#finvite">
+                                             /invite&nbsp; <span class="command-descreption">- Mời bot vào server</span>
+                                        </button>
+                                    </h2>
+                                    <div id="finvite" class="accordion-collapse collapse" data-bs-parent="#invite">
+                                        <div class="accordion-body">
+                                            <span>Ví Dụ:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    /invite
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="accordion accordion-flush mt-2" id="action">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faction">
+                                             /hành-động<span class="command-descreption">- Gửi một hành động tới bạn bè</span>
+                                        </button>
+                                    </h2>
+                                    <div id="faction" class="accordion-collapse collapse" data-bs-parent="#action">
+                                        <div class="accordion-body">
+                                            <span>Ví Dụ:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    /hành-động :option @member
+
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                          
+                                
+                            <div class="accordion accordion-flush mt-2" id="so-may-man">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fso-may-man">
+                                             /số-may-mắn&nbsp; <span class="command-descreption">- Nhận ngẫu nhiên một con số may mắn</span>
+                                        </button>
+                                    </h2>
+                                    <div id="fso-may-man" class="accordion-collapse collapse" data-bs-parent="#so-may-man">
+                                        <div class="accordion-body">
+                                            <span>Ví Dụ:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    /số-may-mắn
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="accordion accordion-flush mt-2" id="may-tinh-tuoi">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fmay-tinh-tuoi">
+                                             /máy-tính-tuổi-thông-minh&nbsp; <span class="command-descreption">- Tính toán tuổi của bạn :lmao:</span>
+                                        </button>
+                                    </h2>
+                                    <div id="fmay-tinh-tuoi" class="accordion-collapse collapse" data-bs-parent="#may-tinh-tuoi">
+                                        <div class="accordion-body">
+                                            <span>Ví Dụ:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    /máy-tính-tuổi-thông-minh
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="accordion accordion-flush mt-2" id="van-mau">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fvan-mau">
+                                             /văn-mẫu&nbsp; <span class="command-descreption">- Yêu cầu bot viết một đoạn văn mẫu</span>
+                                        </button>
+                                    </h2>
+                                    <div id="fvan-mau" class="accordion-collapse collapse" data-bs-parent="#van-mau">
+                                        <div class="accordion-body">
+                                            <span>Ví Dụ:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    /văn-mẫu
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="accordion accordion-flush mt-2" id="contact">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fcontact">
+                                             /contact&nbsp; <span class="command-descreption">- Tra cứu thông tin của Dev</span>
+                                        </button>
+                                    </h2>
+                                    <div id="fcontact" class="accordion-collapse collapse" data-bs-parent="#contact">
+                                        <div class="accordion-body">
+                                            <span>Ví Dụ:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    /contact
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="accordion accordion-flush mt-2" id="donate">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fdonate">
+                                             /donate&nbsp; <span class="command-descreption">- Giúp Dev mua một ly cà phê ❤</span>
+                                        </button>
+                                    </h2>
+                                    <div id="fdonate" class="accordion-collapse collapse" data-bs-parent="#donate">
+                                        <div class="accordion-body">
+                                            <span>Ví Dụ:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    /donate
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="accordion accordion-flush mt-2" id="may-tinh-chieu-cao">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fmay-tinh-chieu-cao">
+                                             /máy-tính-chiều-cao&nbsp; <span class="command-descreption">- Tính toán chiều cao của bạn bằng cách thần kì nào đó</span>
+                                        </button>
+                                    </h2>
+                                    <div id="fmay-tinh-chieu-cao" class="accordion-collapse collapse" data-bs-parent="#may-tinh-chieu-cao">
+                                        <div class="accordion-body">
+                                            <span>Ví Dụ:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    /máy-tính-chiều-cao 
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="accordion accordion-flush mt-2" id="server-status">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fserver-status">
+                                             /server-status&nbsp; <span class="command-descreption">- Kiểm tra thông tin của Server</span>
+                                        </button>
+                                    </h2>
+                                    <div id="fserver-status" class="accordion-collapse collapse" data-bs-parent="#server-status">
+                                        <div class="accordion-body">
+                                            <span>Ví Dụ:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    /server-status
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="accordion accordion-flush mt-2" id="server-avatar">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fserver-avatar">
+                                             /server-avatar&nbsp; <span class="command-descreption">- Xem ảnh đại diện của Server</span>
+                                        </button>
+                                    </h2>
+                                    <div id="fserver-avatar" class="accordion-collapse collapse" data-bs-parent="#server-avatar">
+                                        <div class="accordion-body">
+                                            <span>Ví Dụ:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    /server-avatar
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="accordion accordion-flush mt-2" id="avatar">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#favatar">
+                                             /avatar&nbsp; <span class="command-descreption">- Xem ảnh đại diện của người dùng</span>
+                                        </button>
+                                    </h2>
+                                    <div id="favatar" class="accordion-collapse collapse" data-bs-parent="#avatar">
+                                        <div class="accordion-body">
+                                            <span>Ví Dụ:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    /avatar @member
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+                
+                    
+                    <div class="commands-section" id="Category2">
+                        
+                            
+                            <div class="accordion accordion-flush mt-2" id="girl">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fgirl">
+                                             /girl&nbsp; <span class="command-descreption">- Bot sẽ gửi cho bạn một bức ảnh gái xinggg</span>
+                                        </button>
+                                    </h2>
+                                    <div id="fgirl" class="accordion-collapse collapse" data-bs-parent="#girl">
+                                        <div class="accordion-body">
+                                            <span>Ví Dụ:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    /girl
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="accordion accordion-flush mt-2" id="cat">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fcat">
+                                             /cat&nbsp; <span class="command-descreption">- Bot sẽ gửi cho bạn một bức ảnh mèo ༼ つ ◕_◕ ༽つ  </span>
+                                        </button>
+                                    </h2>
+                                    <div id="fcat" class="accordion-collapse collapse" data-bs-parent="#cat">
+                                        <div class="accordion-body">
+                                            <span>Ví Dụ:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    /cat
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="accordion accordion-flush mt-2" id="dog">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fdog">
+                                             /dog&nbsp; <span class="command-descreption">- Bot sẽ gửi cho bạn một bức ảnh cún  </span>
+                                        </button>
+                                    </h2>
+                                    <div id="fdog" class="accordion-collapse collapse" data-bs-parent="#dog">
+                                        <div class="accordion-body">
+                                            <span>Ví Dụ:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    /dog
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="accordion accordion-flush mt-2" id="waifu">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fwaifu">
+                                             /waifu&nbsp; <span class="command-descreption">- Bot sẽ gửi cho bạn một bức ảnh Waifuuuu  </span>
+                                        </button>
+                                    </h2>
+                                    <div id="fwaifu" class="accordion-collapse collapse" data-bs-parent="#waifu">
+                                        <div class="accordion-body">
+                                            <span>Ví Dụ:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    /waifu
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="accordion accordion-flush mt-2" id="food">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#ffood">
+                                             /food&nbsp; <span class="command-descreption">- Bot sẽ gửi cho bạn một bức ảnh thức ăn </span>
+                                        </button>
+                                    </h2>
+                                    <div id="ffood" class="accordion-collapse collapse" data-bs-parent="#food">
+                                        <div class="accordion-body">
+                                            <span>Ví Dụ:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    /food
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="accordion accordion-flush mt-2" id="meme">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fmeme">
+                                             /meme&nbsp; <span class="command-descreption">- Bot sẽ gửi cho bạn một meme </span>
+                                        </button>
+                                    </h2>
+                                    <div id="fmeme" class="accordion-collapse collapse" data-bs-parent="#meme">
+                                        <div class="accordion-body">
+                                            <span>Ví Dụ:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    /meme
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+
+
+                            <div class="accordion accordion-flush mt-2" id="darkmeme">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fdarkmeme">
+                                             /darkmeme&nbsp; <span class="command-descreption">- Bot sẽ gửi cho bạn một darkmeme  </span>
+                                        </button>
+                                    </h2>
+                                    <div id="fdarkmeme" class="accordion-collapse collapse" data-bs-parent="#darkmeme">
+                                        <div class="accordion-body">
+                                            <span>Ví Dụ:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    /darkmeme
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                
+                    
+                    <div class="commands-section" id="Category3">
+                        
+                        
+                        
+                        <div class="accordion accordion-flush mt-2" id="speak">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fspeak">
+                                        /speak (sắp ra mắt)&nbsp; <span class="command-descreption">- Bạn không có mic? Đừng lo! Tôi ở đây để giúp bạn</span>
+                                    </button>
+                                </h2>
+                                <div id="fspeak" class="accordion-collapse collapse" data-bs-parent="#speak">
+                                    <div class="accordion-body">
+                                        <span>Ví Dụ:</span> <br />
+                                        <span class="examples">
+                                            
+                                                /speak :context
+                                            
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="accordion accordion-flush mt-2" id="chat-gpt">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fchat-gpt">
+                                        /chat-gpt (sắp ra mắt)&nbsp; <span class="command-descreption">- Sử dụng công nghệ AI, bot sẽ trả lời mọi câu hỏi của bạn</span>
+                                    </button>
+                                </h2>
+                                <div id="fchat-gpt" class="accordion-collapse collapse" data-bs-parent="#chat-gpt">
+                                    <div class="accordion-body">
+                                        <span>Ví Dụ:</span> <br />
+                                        <span class="examples">
+                                            
+                                                /chat-gpt :question
+                                            
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                            <div class="accordion accordion-flush mt-2" id="dich">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fdich">
+                                            /dịch&nbsp; <span class="command-descreption">- Dịch đoạn văn của bạn thành bất kì ngôn ngữ nào</span>
+                                        </button>
+                                    </h2>
+                                    <div id="fdich" class="accordion-collapse collapse" data-bs-parent="#dich">
+                                        <div class="accordion-body">
+                                            <span>Ví Dụ:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    /dịch :input_lang :output_lang :context
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="accordion accordion-flush mt-2" id="sap-tet">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fsap-tet">
+                                            /sắp-tết&nbsp; <span class="command-descreption">-  Đếm ngược ngày đến Tết Nguyên Đán</span>
+                                        </button>
+                                    </h2>
+                                    <div id="fsap-tet" class="accordion-collapse collapse" data-bs-parent="#sap-tet">
+                                        <div class="accordion-body">
+                                            <span>Ví Dụ:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    /sắp-tết
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="accordion accordion-flush mt-2" id="thoi-tiet">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fthoi-tiet">
+                                            /thời-tiết&nbsp; <span class="command-descreption">- Dự báo thời tiết thành phố mà bạn muốn</span>
+                                        </button>
+                                    </h2>
+                                    <div id="fthoi-tiet" class="accordion-collapse collapse" data-bs-parent="#thoi-tiet">
+                                        <div class="accordion-body">
+                                            <span>Ví Dụ:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    /thời-tiết :city_name
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="accordion accordion-flush mt-2" id="chat-with-another-language">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fchat-with-another-language">
+                                            /chat-with-another-language&nbsp; <span class="command-descreption">- Đúng như tên gọi, trò chuyện bằng ngôn ngữ khác mà không cần biết ngoại ngữ</span>
+                                        </button>
+                                    </h2>
+                                    <div id="fchat-with-another-language" class="accordion-collapse collapse" data-bs-parent="#chat-with-another-language">
+                                        <div class="accordion-body">
+                                            <span>Ví Dụ:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    /chat-with-another-language :city_name
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+
+
+                            <div class="accordion accordion-flush mt-2" id="wikipedia">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fwikipedia">
+                                            /wikipedia&nbsp; <span class="command-descreption">- Tìm kiếm mọi thứ trên Wikipedia</span>
+                                        </button>
+                                    </h2>
+                                    <div id="fwikipedia" class="accordion-collapse collapse" data-bs-parent="#wikipedia">
+                                        <div class="accordion-body">
+                                            <span>Ví Dụ:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    /wikipedia :ngon_ngu :noi_dung
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="accordion accordion-flush mt-2" id="binance">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fbinance">
+                                            /binance&nbsp; <span class="command-descreption">- Kiếm tra giá trị của crypto (bitcoin, ethereum, doge,...)</span>
+                                        </button>
+                                    </h2>
+                                    <div id="fbinance" class="accordion-collapse collapse" data-bs-parent="#binance">
+                                        <div class="accordion-body">
+                                            <span>Ví Dụ:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    /binance :coin_name
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+
+        <!-- footer -->
+
+        <div class="footer-clean bg-dark">
+            <footer>
+                <div class="container">
+                    <div class="row justify-content-left">
+                        <div class="col-sm-4 col-md-3 item">
+                            <h3>Liên Kết</h3>
+                            <ul>
+                                <li><a href="https://discord.gg/4rJzMXmwBV" target="_blank">Support Server</a></li>
+                                <li><a href="https://discord.com/api/oauth2/authorize?client_id=728462830407254088&permissions=8&scope=applications.commands%20bot" target="_blank">Invite Bot</a></li>
+                                <li><a href="https://github.com/anphongdoa5" target="_blank">Github</a></li>
+                                <li><a href="https://playerduo.com/peanutss" target="_blank">Donate</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-footer font-small text-bold mt-5">
+
+                <div class="footer-copyright text-center">Peanutss Bot </div>
+            
+                <div class="footer-copyright text-center">© 2023 Copyright Andy. All Rights Reserved.</div>
+                </div>
+            </footer>
+        </div>
+    
+    <input id="commands" value="[{&#34;title&#34;:&#34;&lt;i class=&#39;fas fa-gift ttt&#39;&gt;&lt;/i&gt;&amp;nbsp; Moderation Commands&#34;,&#34;commands&#34;:[&#34;ban&#34;,&#34;kick&#34;,&#34;mute&#34;]},{&#34;title&#34;:&#34;&lt;i class=&#39;fas fa-globe-europe ttt&#39;&gt;&lt;/i&gt;&amp;nbsp; General Commands&#34;,&#34;commands&#34;:[&#34;help&#34;,&#34;ping&#34;,&#34;invite&#34;]},{&#34;title&#34;:&#34;&lt;i class=&#39;fas fa-hammer-war ttt&#39;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp; Leveling Commands&#34;,&#34;commands&#34;:[&#34;leaderboard&#34;]},{&#34;title&#34;:&#34;&lt;i class=&#39;fas fas fa-crown ttt&#39;&gt;&lt;/i&gt;&amp;nbsp; Premium Commands&#34;,&#34;commands&#34;:[&#34;reactionrole&#34;,&#34;slowmode&#34;]}]" hidden />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="/fontawesome/all.min.js"></script>
+    <script src="/js/animation.js"></script>
+    <script>
+        function active(elm){
+            document.getElementById("CategoryBtnAll").classList.remove("active");
+            
+                document.getElementById("CategoryBtn0").classList.remove("active");
+                document.getElementById("Category0").setAttribute("hidden", "");
+            
+                document.getElementById("CategoryBtn1").classList.remove("active");
+                document.getElementById("Category1").setAttribute("hidden", "");
+            
+                document.getElementById("CategoryBtn2").classList.remove("active");
+                document.getElementById("Category2").setAttribute("hidden", "");
+            
+                document.getElementById("CategoryBtn3").classList.remove("active");
+                document.getElementById("Category3").setAttribute("hidden", "");
+            
+            elm.classList.add("active");
+            if(elm.id.replace("CategoryBtn", "") == "All"){
+                
+                    document.getElementById("Category0").removeAttribute("hidden");
+                
+                    document.getElementById("Category1").removeAttribute("hidden");
+                
+                    document.getElementById("Category2").removeAttribute("hidden");
+                
+                    document.getElementById("Category3").removeAttribute("hidden");
+                
+            }else{
+                document.getElementById("Category" + elm.id.replace("CategoryBtn", "")).removeAttribute("hidden");
+            }
+        }
+        document.getElementById("CategoryBtnAll").click();
+        function search(arg){
+            let commands = JSON.parse(document.getElementById("commands").value);
+            let cmds = [];
+            commands.forEach(category => {
+                category.commands.forEach(command => {
+                    cmds.push(command);
+                })
+            })
+            let existedCmds = cmds.filter(obj => obj.includes(arg.toLowerCase()));
+            cmds.forEach(cmd => {
+                document.getElementById(cmd).setAttribute("hidden", "");
+            })
+            existedCmds.forEach(cmd => {
+                document.getElementById(cmd).removeAttribute("hidden");
+            })
+        }
+    </script>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+
+</html>
